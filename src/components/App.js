@@ -137,6 +137,10 @@ class App extends Component {
     // );
   }
 
+  throwError() {
+    throw new Error("This is an error!");
+  }
+
   render() {
     const total = this.state.cart.reduce((t, i) => t + i.price, 0);
     const cartDisplay = this.state.cart.reduce((c, { id }) => {
@@ -170,7 +174,7 @@ class App extends Component {
           </div>
 
           <footer>
-          <a href="/about">About</a>
+            <button onClick={this.throwError}>Throw Error</button>
           </footer>
         </main>
         <div className="sidebar">
