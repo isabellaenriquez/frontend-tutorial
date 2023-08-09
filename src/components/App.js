@@ -168,6 +168,10 @@ class App extends Component {
               );
             })}
           </div>
+
+          <footer>
+          <a href="/about">About</a>
+          </footer>
         </main>
         <div className="sidebar">
           <header>
